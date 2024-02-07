@@ -1,0 +1,137 @@
+:root {
+  --fuenteOpen: "Open Sans", sans-serif;
+  --fuenteRoboto: "Roboto", sans-serif;
+  --color-white: #ffffff;
+  --color-platinum: #e8ebe4;
+  --color-gray: #bec1bb;
+  --color-blueBell: #a491d2;
+  --color-soap: #cdc3e6;
+  --color-paleLavender: #f8f8f8;
+  --color-darkJungle: #1b1f21;
+  --color-outerSpace: #444749;
+  --color-oldSilver: #828485;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Generales */
+img {
+  max-width: 100%;
+  display: block;
+}
+p {
+  font-family: var(--fuenteOpen);
+  color: var(--color-oldSilver);
+  font-size: 1.4rem;
+  margin: 0;
+}
+h1 {
+  font-family: var(--fuenteRoboto);
+  color: var(--color-darkJungle);
+  font-weight: 400;
+  font-size: 4.5rem;
+  margin-bottom: 0;
+}
+h2 {
+  font-family: var(--fuenteRoboto);
+  font-size: 1.6rem;
+  margin: 0;
+}
+.contenedorFlex {
+  display: flex;
+}
+/* Aside */
+.contactos {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 38rem;
+  border-right: 1px solid var(--color-gray);
+}
+.activo {
+  display: flex;
+  justify-content: space-between;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.activo img {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+.iconos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--color-oldSilver);
+}
+.contacto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.img-contacto {
+  border-radius: 50%;
+  width: 4rem;
+}
+.border {
+  border-bottom: 1px solid var(--color-gray);
+  padding: 2rem 3rem;
+}
+/*Boton Nuevo Chat*/
+.flex-chat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton {
+  background-color: var(--color-blueBell);
+  color: var(--color-white);
+  font-family: var(--fuenteRoboto);
+  font-size: 1.6rem;
+  padding: 1.5rem 6rem;
+  border: none;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+.boton:hover {
+  background-color: var(--color-soap);
+  border-color: var(--color-blueBell);
+  transform: scale(1.03);
+  transition: 0.3s;
+}
+.boton:focus {
+  background-color: var(--color-platinum);
+}
+/*Main*/
+.principal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-paleLavender);
+}
+.logo {
+  width: 27rem;
+  border-radius: 1rem;
+}
+.p-principal {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+.principal span {
+  font-weight: bold;
+  color: var(--color-darkJungle);
+}
